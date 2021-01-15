@@ -193,14 +193,14 @@ def wechatPush(title,sckey,success,fail,result):
     content = f"""
 `{strTime}` 
 #### 打卡成功用户：
-`{success}` 
+`{Re success}` 
 #### 打卡失败用户:
-`{fail}`
+`{Re fail}`
 #### 主用户打卡信息:
 ```
 {page}
 ```
-### 😀[收藏此项目](https://github.com/YooKing/HAUT_autoCheck)
+
 
         """
     data = {
