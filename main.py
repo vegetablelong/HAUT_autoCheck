@@ -34,7 +34,7 @@ def main():
                     ownPhone=phone[index]
                     response = check(ownPhone,userInfo,token)
                 strTime = getNowTime()
-                if response.json()["msg"] == '成功':
+                if response.json()["msg"] == 'Re成功':
                     success.append(value[-4:])
                     print(response.text)
                     msg = strTime + value[-4:]+"打卡成功"
@@ -193,9 +193,9 @@ def wechatPush(title,sckey,success,fail,result):
     content = f"""
 `{strTime}` 
 #### 打卡成功用户：
-`{Re success}` 
+`{success}` 
 #### 打卡失败用户:
-`{Re fail}`
+`{fail}`
 #### 主用户打卡信息:
 ```
 {page}
